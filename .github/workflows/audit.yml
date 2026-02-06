@@ -1,13 +1,28 @@
-﻿name: WP News Visibility Audit
+name: WP News Visibility Audit
 
 on:
   workflow_dispatch:
+    inputs:
+      site:
+        description: Site URL to audit
+        required: false
+        default: https://msnewsgroup.com/
+      sample_size:
+        description: Number of article URLs to sample
+        required: false
+        default: "10"
   schedule:
-    - cron: '17 6 * * *'
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: read
 
 jobs:
   audit:
     runs-on: ubuntu-latest
+    env:
+      SITE_URL: ${{ github.event.inputs.site || 'https://msnewsgroup.com/' }}
+      SAMPLE_SIZE: ${{ github.event.inputs.sample_size || '10' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -15,7 +30,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: Install toolkit
         run: |
@@ -24,12 +39,20 @@ jobs:
 
       - name: Generate report
         run: |
-          python -m wp_news_ops report --site https://msnewsgroup.com/ --markdown-out reports/latest.md --json-out reports/latest.json
+          python -m wp_news_ops report --site "$SITE_URL" --sample-size "$SAMPLE_SIZE" --markdown-out reports/latest.md --json-out reports/latest.json
+
+      - name: Job summary
+        run: |
+          echo "## WP News Visibility Report" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Site: \`$SITE_URL\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Sample size: \`$SAMPLE_SIZE\`" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Artifacts: \`reports/latest.md\`, \`reports/latest.json\`" >> "$GITHUB_STEP_SUMMARY"
 
       - name: Upload report artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: wp-news-visibility-report
+          name: wp-news-visibility-report-${{ github.run_number }}
           path: |
             reports/latest.md
             reports/latest.json

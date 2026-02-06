@@ -47,3 +47,16 @@ python -m wp_news_ops report --site https://msnewsgroup.com/ \
 ## GitHub Action
 
 The workflow runs daily and on manual dispatch, generates both report files, and uploads them as artifacts.
+
+Manual run in GitHub:
+
+1. Open `Actions` tab in `wallyrebel/MsNewsGroup.com`.
+2. Select workflow `WP News Visibility Audit`.
+3. Click `Run workflow`.
+4. Optionally override `site` (default `https://msnewsgroup.com/`) and `sample_size` (default `10`).
+5. Open the run and download artifact `wp-news-visibility-report-<run_number>`.
+
+Artifact contents:
+
+- `reports/latest.md`
+- `reports/latest.json`
