@@ -1,0 +1,666 @@
+{
+  "site": "https://msnewsgroup.com/",
+  "generated_at": "2026-02-06T17:09:51+00:00",
+  "priority_counts": {
+    "P0": 0,
+    "P1": 2,
+    "P2": 0
+  },
+  "issues": [
+    {
+      "priority": "P1",
+      "title": "Feed has elevated NewsBreak ingestion risk",
+      "evidence": "Feed content appears excerpt-only.",
+      "fix": "Switch RSS to full text and include featured images in feed items."
+    },
+    {
+      "priority": "P1",
+      "title": "JSON-LD Article/NewsArticle schema is missing on sampled pages",
+      "evidence": "10 of 10 pages lacked Article schema.",
+      "fix": "Enable schema output for Posts in your SEO plugin and map it to Article or NewsArticle."
+    }
+  ],
+  "audit": {
+    "site": "https://msnewsgroup.com/",
+    "generated_at": "2026-02-06T17:09:51+00:00",
+    "discovery": {
+      "robots": {
+        "url": "https://msnewsgroup.com/robots.txt",
+        "status": 200,
+        "error": null,
+        "disallow_rules": [
+          "",
+          "",
+          "",
+          "",
+          "/wp-admin/",
+          "/?s=*"
+        ],
+        "sitemap_lines": [
+          "https://msnewsgroup.com/sitemaps.xml"
+        ],
+        "potentially_blocking_rules": []
+      },
+      "sitemaps": [
+        {
+          "path": "/sitemap.xml",
+          "url": "https://msnewsgroup.com/sitemap.xml",
+          "status": 404,
+          "error": null,
+          "exists": false,
+          "content_type": "text/html; charset=utf-8",
+          "lastmod_hints": []
+        },
+        {
+          "path": "/sitemap_index.xml",
+          "url": "https://msnewsgroup.com/sitemap_index.xml",
+          "status": 200,
+          "error": null,
+          "exists": true,
+          "content_type": "text/xml;charset=UTF-8",
+          "lastmod_hints": [
+            "2026-02-05T22:31:12-06:00",
+            "2026-01-05T00:35:43-06:00",
+            "2024-05-31T12:02:51-05:00"
+          ]
+        },
+        {
+          "path": "/wp-sitemap.xml",
+          "url": "https://msnewsgroup.com/wp-sitemap.xml",
+          "status": 200,
+          "error": null,
+          "exists": true,
+          "content_type": "text/xml;charset=UTF-8",
+          "lastmod_hints": [
+            "2026-02-05T22:31:12-06:00",
+            "2026-01-05T00:35:43-06:00",
+            "2024-05-31T12:02:51-05:00"
+          ]
+        },
+        {
+          "path": "/news-sitemap.xml",
+          "url": "https://msnewsgroup.com/news-sitemap.xml",
+          "status": 404,
+          "error": null,
+          "exists": false,
+          "content_type": "text/html; charset=UTF-8",
+          "lastmod_hints": []
+        }
+      ]
+    },
+    "feed": {
+      "discovered_feed_urls": [
+        "https://msnewsgroup.com/feed/"
+      ],
+      "homepage_discovery_error": null,
+      "checked_feeds": [
+        {
+          "url": "https://msnewsgroup.com/feed/",
+          "status": 200,
+          "error": null,
+          "items": [
+            {
+              "title": "Blue Mountain Christian loses 61-57 to Life University",
+              "link": "https://msnewsgroup.com/sports/blue-mountain-christian-loses-61-57-to-life-university/",
+              "pub_date": "Fri, 06 Feb 2026 04:31:12 +0000",
+              "has_image": true,
+              "content_length": 146,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Life defeats Blue Mountain Christian 89-63 in SSAC game",
+              "link": "https://msnewsgroup.com/sports/life-defeats-blue-mountain-christian-89-63-in-ssac-game/",
+              "pub_date": "Fri, 06 Feb 2026 04:30:44 +0000",
+              "has_image": true,
+              "content_length": 146,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Blue Mountain Christian falls to Life University 61-57",
+              "link": "https://msnewsgroup.com/sports/blue-mountain-christian-falls-to-life-university-61-57/",
+              "pub_date": "Fri, 06 Feb 2026 04:29:46 +0000",
+              "has_image": true,
+              "content_length": 131,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Life University defeats Blue Mountain Christian 89-63 in SSAC",
+              "link": "https://msnewsgroup.com/sports/life-university-defeats-blue-mountain-christian-89-63-in-ssac/",
+              "pub_date": "Fri, 06 Feb 2026 04:28:44 +0000",
+              "has_image": true,
+              "content_length": 135,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Team Rubicon mobilizes to area, offers assistance",
+              "link": "https://msnewsgroup.com/news/team-rubicon-mobilizes-to-area-offers-assistance/",
+              "pub_date": "Fri, 06 Feb 2026 03:37:57 +0000",
+              "has_image": true,
+              "content_length": 98,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Thyroid affects nearly every organ system, UMC warns",
+              "link": "https://msnewsgroup.com/health/thyroid-affects-nearly-every-organ-system-umc-warns/",
+              "pub_date": "Fri, 06 Feb 2026 02:39:51 +0000",
+              "has_image": true,
+              "content_length": 122,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Alcorn County Board of Supervisors posts photos on Facebook",
+              "link": "https://msnewsgroup.com/local/alcorn-county-board-of-supervisors-posts-photos-on-facebook/",
+              "pub_date": "Fri, 06 Feb 2026 02:39:15 +0000",
+              "has_image": true,
+              "content_length": 118,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Reeves meets Morocco ambassador to discuss education, economic development",
+              "link": "https://msnewsgroup.com/politics/reeves-meets-morocco-ambassador-to-discuss-education-economic-development/",
+              "pub_date": "Fri, 06 Feb 2026 01:36:01 +0000",
+              "has_image": true,
+              "content_length": 121,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Mississippi mourns Lee County SRO Rick Haggard",
+              "link": "https://msnewsgroup.com/local/mississippi-mourns-lee-county-sro-rick-haggard/",
+              "pub_date": "Fri, 06 Feb 2026 01:35:28 +0000",
+              "has_image": true,
+              "content_length": 137,
+              "looks_excerpt": false
+            },
+            {
+              "title": "Facebook shows content unavailable when post restricted or removed",
+              "link": "https://msnewsgroup.com/technology/facebook-shows-content-unavailable-when-post-restricted-or-removed/",
+              "pub_date": "Thu, 05 Feb 2026 21:10:39 +0000",
+              "has_image": false,
+              "content_length": 116,
+              "looks_excerpt": false
+            }
+          ],
+          "parse_error": null
+        }
+      ],
+      "selected_feed_url": "https://msnewsgroup.com/feed/",
+      "selected_feed_status": 200,
+      "item_count": 10,
+      "items_with_title": 10,
+      "items_with_link": 10,
+      "items_with_date": 10,
+      "items_with_image": 9,
+      "excerpt_like_items": 0,
+      "avg_content_length": 127.0,
+      "newsbreak_risk": true,
+      "newsbreak_risk_reasons": [
+        "Feed content appears excerpt-only."
+      ],
+      "items": [
+        {
+          "title": "Blue Mountain Christian loses 61-57 to Life University",
+          "link": "https://msnewsgroup.com/sports/blue-mountain-christian-loses-61-57-to-life-university/",
+          "pub_date": "Fri, 06 Feb 2026 04:31:12 +0000",
+          "has_image": true,
+          "content_length": 146,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Life defeats Blue Mountain Christian 89-63 in SSAC game",
+          "link": "https://msnewsgroup.com/sports/life-defeats-blue-mountain-christian-89-63-in-ssac-game/",
+          "pub_date": "Fri, 06 Feb 2026 04:30:44 +0000",
+          "has_image": true,
+          "content_length": 146,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Blue Mountain Christian falls to Life University 61-57",
+          "link": "https://msnewsgroup.com/sports/blue-mountain-christian-falls-to-life-university-61-57/",
+          "pub_date": "Fri, 06 Feb 2026 04:29:46 +0000",
+          "has_image": true,
+          "content_length": 131,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Life University defeats Blue Mountain Christian 89-63 in SSAC",
+          "link": "https://msnewsgroup.com/sports/life-university-defeats-blue-mountain-christian-89-63-in-ssac/",
+          "pub_date": "Fri, 06 Feb 2026 04:28:44 +0000",
+          "has_image": true,
+          "content_length": 135,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Team Rubicon mobilizes to area, offers assistance",
+          "link": "https://msnewsgroup.com/news/team-rubicon-mobilizes-to-area-offers-assistance/",
+          "pub_date": "Fri, 06 Feb 2026 03:37:57 +0000",
+          "has_image": true,
+          "content_length": 98,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Thyroid affects nearly every organ system, UMC warns",
+          "link": "https://msnewsgroup.com/health/thyroid-affects-nearly-every-organ-system-umc-warns/",
+          "pub_date": "Fri, 06 Feb 2026 02:39:51 +0000",
+          "has_image": true,
+          "content_length": 122,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Alcorn County Board of Supervisors posts photos on Facebook",
+          "link": "https://msnewsgroup.com/local/alcorn-county-board-of-supervisors-posts-photos-on-facebook/",
+          "pub_date": "Fri, 06 Feb 2026 02:39:15 +0000",
+          "has_image": true,
+          "content_length": 118,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Reeves meets Morocco ambassador to discuss education, economic development",
+          "link": "https://msnewsgroup.com/politics/reeves-meets-morocco-ambassador-to-discuss-education-economic-development/",
+          "pub_date": "Fri, 06 Feb 2026 01:36:01 +0000",
+          "has_image": true,
+          "content_length": 121,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Mississippi mourns Lee County SRO Rick Haggard",
+          "link": "https://msnewsgroup.com/local/mississippi-mourns-lee-county-sro-rick-haggard/",
+          "pub_date": "Fri, 06 Feb 2026 01:35:28 +0000",
+          "has_image": true,
+          "content_length": 137,
+          "looks_excerpt": false
+        },
+        {
+          "title": "Facebook shows content unavailable when post restricted or removed",
+          "link": "https://msnewsgroup.com/technology/facebook-shows-content-unavailable-when-post-restricted-or-removed/",
+          "pub_date": "Thu, 05 Feb 2026 21:10:39 +0000",
+          "has_image": false,
+          "content_length": 116,
+          "looks_excerpt": false
+        }
+      ]
+    },
+    "articles": {
+      "sample_urls": [
+        "https://msnewsgroup.com/sports/blue-mountain-christian-loses-61-57-to-life-university/",
+        "https://msnewsgroup.com/sports/life-defeats-blue-mountain-christian-89-63-in-ssac-game/",
+        "https://msnewsgroup.com/sports/blue-mountain-christian-falls-to-life-university-61-57/",
+        "https://msnewsgroup.com/sports/life-university-defeats-blue-mountain-christian-89-63-in-ssac/",
+        "https://msnewsgroup.com/news/team-rubicon-mobilizes-to-area-offers-assistance/",
+        "https://msnewsgroup.com/health/thyroid-affects-nearly-every-organ-system-umc-warns/",
+        "https://msnewsgroup.com/local/alcorn-county-board-of-supervisors-posts-photos-on-facebook/",
+        "https://msnewsgroup.com/politics/reeves-meets-morocco-ambassador-to-discuss-education-economic-development/",
+        "https://msnewsgroup.com/local/mississippi-mourns-lee-county-sro-rick-haggard/",
+        "https://msnewsgroup.com/technology/facebook-shows-content-unavailable-when-post-restricted-or-removed/"
+      ],
+      "pages": [
+        {
+          "url": "https://msnewsgroup.com/sports/blue-mountain-christian-loses-61-57-to-life-university/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 91694,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/sports/blue-mountain-christian-loses-61-57-to-life-university/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 450,
+            "og:image:height": 253,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_f6e1bd5b6635-1.webp"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/sports/life-defeats-blue-mountain-christian-89-63-in-ssac-game/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 92339,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/sports/life-defeats-blue-mountain-christian-89-63-in-ssac-game/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 450,
+            "og:image:height": 253,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_c54cdc802fc0-1.webp"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/sports/blue-mountain-christian-falls-to-life-university-61-57/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 92264,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/sports/blue-mountain-christian-falls-to-life-university-61-57/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 450,
+            "og:image:height": 253,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_f6e1bd5b6635.webp"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/sports/life-university-defeats-blue-mountain-christian-89-63-in-ssac/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 92327,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/sports/life-university-defeats-blue-mountain-christian-89-63-in-ssac/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 450,
+            "og:image:height": 253,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_c54cdc802fc0.webp"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/news/team-rubicon-mobilizes-to-area-offers-assistance/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 92658,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/news/team-rubicon-mobilizes-to-area-offers-assistance/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 720,
+            "og:image:height": 720,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_c6d00bc73fff.jpg"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/health/thyroid-affects-nearly-every-organ-system-umc-warns/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 86367,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/health/thyroid-affects-nearly-every-organ-system-umc-warns/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 960,
+            "og:image:height": 720,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_860da05be30b.jpg"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/local/alcorn-county-board-of-supervisors-posts-photos-on-facebook/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 91388,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/local/alcorn-county-board-of-supervisors-posts-photos-on-facebook/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 960,
+            "og:image:height": 720,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_71b00bd75448.jpg"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/politics/reeves-meets-morocco-ambassador-to-discuss-education-economic-development/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 92188,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/politics/reeves-meets-morocco-ambassador-to-discuss-education-economic-development/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 761,
+            "og:image:height": 720,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_fe58e7b8b930.jpg"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/local/mississippi-mourns-lee-county-sro-rick-haggard/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 91936,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/local/mississippi-mourns-lee-county-sro-rick-haggard/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 720,
+            "og:image:height": 901,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2026/02/image_5b3a4fecd411.jpg"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        },
+        {
+          "url": "https://msnewsgroup.com/technology/facebook-shows-content-unavailable-when-post-restricted-or-removed/",
+          "status": 200,
+          "error": null,
+          "response_size_bytes": 91414,
+          "canonical": {
+            "exists": true,
+            "url": "https://msnewsgroup.com/technology/facebook-shows-content-unavailable-when-post-restricted-or-removed/",
+            "consistent_with_url": true
+          },
+          "meta_robots": {
+            "content": "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1",
+            "noindex": false
+          },
+          "open_graph": {
+            "og:title": true,
+            "og:type": true,
+            "og:url": true,
+            "og:image": true,
+            "og:image:width": 500,
+            "og:image:height": 500,
+            "og:image_value": "https://msnewsgroup.com/wp-content/uploads/2020/08/M.png"
+          },
+          "publication_date_visible_html": true,
+          "jsonld": {
+            "entity_count": 0,
+            "article_entity_count": 0,
+            "missing_fields": []
+          },
+          "performance": {
+            "render_blocking_scripts": 5,
+            "huge_inline_scripts": 0
+          }
+        }
+      ],
+      "summary": {
+        "sampled": 10,
+        "fetched": 10,
+        "missing_canonical": 0,
+        "canonical_mismatch": 0,
+        "noindex_pages": 0,
+        "missing_og_fields": {
+          "og:title": 0,
+          "og:type": 0,
+          "og:url": 0,
+          "og:image": 0
+        },
+        "missing_publication_date_html": 0,
+        "missing_jsonld_article": 10,
+        "jsonld_missing_field_counts": {
+          "headline": 0,
+          "datePublished": 0,
+          "dateModified": 0,
+          "author.name": 0,
+          "publisher.name": 0,
+          "image": 0
+        },
+        "avg_response_size_bytes": 91457,
+        "high_blocking_script_pages": 0,
+        "huge_inline_script_pages": 0,
+        "missing_og_image_dimensions": 0
+      }
+    }
+  }
+}
